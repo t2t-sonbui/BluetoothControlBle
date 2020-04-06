@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.0"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "com.demo.embedded.bluetoothcontroll"
         minSdkVersion 19
-        targetSdkVersion 29
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
@@ -26,7 +26,9 @@ android {
     }
 
 }
-
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:28.0.0'
+}
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -36,7 +38,15 @@ dependencies {
     implementation 'android.arch.navigation:navigation-fragment:1.0.0'
     implementation 'android.arch.navigation:navigation-ui:1.0.0'
     implementation 'com.squareup.okio:okio:2.2.2'
+    // ReactiveX
+    implementation "io.reactivex.rxjava2:rxjava:" + project.ext.rxJavaVersion
+    implementation "io.reactivex.rxjava2:rxandroid:" + project.ext.rxAndroidVersion
+    //BLE RX
+    implementation "com.polidea.rxandroidble2:rxandroidble:" + project.ext.RxAndroidBleVersion
+    //
+    implementation 'com.jakewharton.rx2:replaying-share:2.2.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    annotationProcessor 'com.android.support:support-annotations:28.0.0'
 }

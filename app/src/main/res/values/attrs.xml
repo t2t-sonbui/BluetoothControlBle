@@ -25,12 +25,12 @@
         <attr name="symbolImage" format="reference"></attr>
         <attr name="buttonImage" format="reference"></attr>
 
-<!--        <attr name="controlBackgroundColor" format="color"></attr>-->
-<!--        <attr name="controlBackgroundPressedColor" format="color"></attr>-->
-<!--        <attr name="controlForegroundColor" format="color"></attr>-->
-<!--        <attr name="controlForegroundPressedColor" format="color"></attr>-->
-<!--        <attr name="controlSymbolImage" format="reference"></attr>-->
-<!--        <attr name="controlButtonImage" format="reference"></attr>-->
+        <!--        <attr name="controlBackgroundColor" format="color"></attr>-->
+        <!--        <attr name="controlBackgroundPressedColor" format="color"></attr>-->
+        <!--        <attr name="controlForegroundColor" format="color"></attr>-->
+        <!--        <attr name="controlForegroundPressedColor" format="color"></attr>-->
+        <!--        <attr name="controlSymbolImage" format="reference"></attr>-->
+        <!--        <attr name="controlButtonImage" format="reference"></attr>-->
     </declare-styleable>
 
 

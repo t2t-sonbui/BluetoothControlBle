@@ -2,11 +2,11 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/controlFragment">
+    app:startDestination="@id/bleFragment">
 
     <fragment
-        android:id="@+id/controlFragment"
-        android:name="com.demo.embedded.bluetoothcontroll.ControlFragment"
-        android:label="ControlFragment" />
+        android:id="@+id/bleFragment"
+        android:name="com.demo.embedded.bluetoothcontroll.BleFragment"
+        android:label="BleFragment" />
 
 </navigation>

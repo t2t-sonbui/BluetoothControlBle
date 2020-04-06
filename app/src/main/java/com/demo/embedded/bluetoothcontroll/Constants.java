@@ -16,9 +16,7 @@
 
 package com.demo.embedded.bluetoothcontroll;
 
-/**
- * Defines several constants used between {@link BluetoothSPPService} and the UI.
- */
+
 public interface Constants {
 
     // Message types sent from the BluetoothChatService Handler

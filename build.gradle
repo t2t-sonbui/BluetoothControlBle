@@ -22,6 +22,12 @@ allprojects {
         jcenter()
         
     }
+    project.ext {
+        //BLEEX
+        RxAndroidBleVersion = "1.11.0"
+        rxJavaVersion = "2.2.3"
+        rxAndroidVersion = "2.0.1"
+    }
 }
 
 task clean(type: Delete) {
